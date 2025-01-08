@@ -20,10 +20,10 @@ jobs:
 
       - name: Set up Gleam
         uses: erlef/setup-beam@v1
-        # with:
-        #   otp-version: "27.0"
-        #   gleam-version: "1.4.1"
-        #   rebar3-version: "3"
+        with:
+          otp-version: "27.0"
+          gleam-version: "1.7.0"
+          rebar3-version: "3"
 
       - name: Install dependencies
         run: gleam deps download
